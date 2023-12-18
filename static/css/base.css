@@ -1,0 +1,45 @@
+body {
+    background: #abe8d8;
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    color: #e00b32;
+    font-size: 6.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 4.25em;
+    color: #181814;
+}
+
+button {
+    color: darkslategrey;
+    background: #ABE8D8;
+    font-size: 6em;
+    text-align: center;
+}
+
+li {
+    color: #141a23;
+    font-size: 3em;
+
+}
+
+th {
+    font-size: 0.6em;
+    border-bottom: 1px solid #141a23;
+}
+
+td {
+    border-bottom: 1px solid #141a23;
+    text-align: center;
+}
+
+table {
+    color: #141a23;
+    border-collapse: collapse;
+    border: 1px solid;
+}

@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block add_style %}
+button {
+    font-size: 3em;
+}
+{% endblock add_style %}
+
+{% block content %}
+<form method="post">
+    <label for="name">Enter Name</label>
+    <input type="text" name="name" id="name" placeholder="Your Name" required><br/>
+    <label for="region">Enter City</label>
+    <select id="region" name="region">
+        <option value="">--Your region--</option>
+        {% for key, value in cities.items() %}
+            <option value="{{key}}">{{ value }}</option>
+        {% endfor %}
+    </select><br/>
+    <label for="phone">Enter Phone</label>
+    <input type="tel" name="phone" id="phone" placeholder="Your Phone Number" required><br/>
+    <label for="order">Enter Order</label>
+    <input type="text" name="order" id="order" placeholder="Your Order Name"><br/>
+
+    <button type="reset">Reset Form</button>
+    <button type="submit">Send Form</button>
+</form>
+    <a href="/">
+            <button>Back</button>
+    </a>
+{% endblock content %}

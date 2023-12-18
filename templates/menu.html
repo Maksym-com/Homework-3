@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ block_title }}</h1>
+    <ul>
+        {% for pizza in menu%}
+        <li>
+            <table>
+                <tr>
+                    <th>{{ pizza.name }} : </th>
+                    <th>{{ pizza.ingredients }} : </th>
+                    <th>{{ pizza.price }}</th>
+                </tr>
+            </table>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/" style="float: left">
+            <button>Back</button>
+    </a>
+{% endblock content %}

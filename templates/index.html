@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ title }}{% endblock title %}</title>
+        <link rel="stylesheet" href="\static\css\base.css">
+    </head>
+
+    <body>
+    {% block content %}
+        <h1>Ла pizza</h1>
+
+        <p>Якийсь адрес?</p>
+
+        <a href="/menu">
+            <button>Menu</button>
+        </a>
+        <a href="/about">
+            <button>Info</button>
+        </a>
+        <a href="/images" >
+            <button>Images</button>
+        </a>
+        <a href="/join">
+            <button>Order</button>
+        </a>
+        <a href="/users">
+            <button>Users</button>
+        </a>
+    {% endblock content %}
+    </body>
+</html>

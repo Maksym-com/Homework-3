@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block title %}
+    {{ title }}
+{% endblock title %}
+
+{% block content %}
+    <h1>{{ block_title }}</h1>
+    <ul>
+        {% for student in workers%}
+        <li>
+            <em>{{ student.name }}:</em> {{ student.work }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/" style="float: left">
+            <button>Back</button>
+    </a>
+{% endblock content %}

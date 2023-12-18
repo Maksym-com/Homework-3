@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+
+{% block add_style %}
+table, th, tr, td {
+    border: 1px solid black;
+    font-size: 6em;
+}
+table {
+    width: 100%;
+}
+{% endblock add_style %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Region</th>
+        <th>Order</th>
+        <th>Phone</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user[0] }}</td>
+        {% if user[1] %}
+            <td>{{ user[1] }}</td>
+        {% else %}
+            <td>None</td>
+        {% endif %}
+        <td>{{ user[2] }}</td>
+        <td>{{ user[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
